@@ -1,12 +1,15 @@
-import ImageSlider from "../features/ImageSlider";
-import transparentBike from '../assets/TransparentBike.png'
+import ImageSlider from '../features/ImageSlider';
+import transparentBike from '../assets/TransparentBike.png';
+import Bike1 from '../assets/bike1.jpg';
+import Bike2 from '../assets/bike2.jpg';
+import Meeting from '../assets/MeetingAtBike.jpg';
 
 function Home(){
     //Declare your list of images
     const slides = [
-        {url:'public/bike1.jpg', title:'Bike 1'},
-        {url:'public/bike2.jpg', title:'Bike1'},
-        {url:'public/MeetingAtBike.jpg', title:'meeting'},
+        Bike1,
+        Bike2,
+        Meeting,
     ]
     const containerStyles = {
         width: '100%',
@@ -38,9 +41,8 @@ function Home(){
     return(
         <>
         <section className="homePage">
-            
             <section>
-                Homepage Under Construction
+                Welcome To BridgeVolt Cooperative
             </section>
             <div style={containerStyles}>
                 <ImageSlider slides={slides}/>

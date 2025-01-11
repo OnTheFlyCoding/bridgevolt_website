@@ -1,4 +1,4 @@
-import { useState } from "react"; 
+import { useState } from "react";
 function ImageSlider({slides}){
     const [currentIndex, setCurrentIndex] = useState(0);
     const sliderContainer = {
@@ -6,12 +6,12 @@ function ImageSlider({slides}){
         postition: 'relative',
     }
     const sliderStyles = {
-        backgroundImage: `url(${slides[currentIndex].url})`,
+        backgroundImage: `url(${slides[currentIndex]})`,
         width: '100%',
         height: '100%',
         borderRadius: '10px',
         backgroundPosition: 'center',
-        backgroundSize: 'cover'
+        backgroundSize: 'cover',
     }
     const previousSlide = () =>{
         ///check if first slide, if so show the last slide

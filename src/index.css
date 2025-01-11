@@ -1,10 +1,12 @@
-@import url('https://fonts.googleapis.com/css2?family=Saira+Condensed:wght@100;400&family=Turret+Road:wght@200;400&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Saira+Condensed:wght@100;400&family=Turret+Road:wght@200;300;400;500&display=swap');
 
 :root {
   margin: 0;
-  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  font-family: "Turret Road", serif, sans-serif;
   line-height: 1.5;
-  font-weight: 400;
+  font-weight: 500;
+  font-style: normal;
 
   color-scheme: light dark;
   /* color: rgba(3, 35, 113, 0.87); */
@@ -124,7 +126,8 @@ h1 {
   color: white;
 }
 .testing{
-  background-image: url(/bike1.jpg);
+  background-image: url(/public/bike1.jpg);
+  height: 200px;
 }
 .bikeHandle{
   position: absolute;

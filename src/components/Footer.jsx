@@ -10,8 +10,8 @@ function Footer(){
                 </h4>
                 <div style={{display:'flex', alignItems:'center', justifyContent:'center', gap:'10px'}}>
                     <button ><a style={{color:'white'}} href="https://www.facebook.com/bridgevolt">Facebook</a></button>
-                    <button>X</button>
-                    <button>Instagram </button>
+                    <button ><a style={{color:'white'}} href="https://www.x.com/bridgevolt/">X</a></button>
+                    <button ><a style={{color:'white'}} href="https://www.instagram.com/bridgevolt/">Instagram</a></button>
                 </div>
                 <div style={{display:'flex', alignItems:'center', justifyContent:'center', gap:'20px'}}>
                     <h4>bridgevolt@gmail.com</h4>
