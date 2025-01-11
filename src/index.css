@@ -1,38 +1,250 @@
+@import url('https://fonts.googleapis.com/css2?family=Saira+Condensed:wght@100;400&family=Turret+Road:wght@200;400&display=swap');
+
 :root {
+  margin: 0;
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
   font-weight: 400;
 
   color-scheme: light dark;
-  color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
+  /* color: rgba(3, 35, 113, 0.87); */
+  color:black;
+  background-image: linear-gradient(to right, #2BC0E4, #ebf8e1, #EAECC6, rgb(246, 208, 137) );
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
+.turret-road-regular {
+  font-family: "Turret Road", serif;
+  font-weight: 400;
+  font-style: normal;
+}
 
 a {
   font-weight: 500;
-  color: #646cff;
+  color: #080808;
   text-decoration: inherit;
 }
 a:hover {
-  color: #535bf2;
+  filter: drop-shadow(10px 10px 15px #646cffaa) ;
+}
+header{
+  background-color: white;
 }
 
 body {
-  margin: 0;
-  display: flex;
-  place-items: center;
   min-width: 320px;
   min-height: 100vh;
+  margin: 0;
 }
 
 h1 {
-  font-size: 3.2em;
+  font-size: 3em;
   line-height: 1.1;
+  color: rgba(3, 35, 113, 0.87);
+}
+.container {
+  width: 100%;
+  max-width: none;
+  margin: 0 auto;
+  padding: 0;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.header {
+  display: flex;
+  flex-direction: column;
+  padding: 10px 0;
+  border-bottom: 1px solid black;
+  margin-bottom: 10px;
+}
+.navigation{
+  display: flex;
+  font-size: 1.5em;
+  justify-content:center;
+}
+.navigation>a{
+  padding: 20px;
+  text-align: center;
+}
+.navigation>a:hover{
+  color:white;
+  background-color: aqua;
+  transform: scale(1.1,1.1);
+}
+.border{
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
+}
+
+.logo{
+  flex:1;
+  height: 250px;
+  width: 100%;
+
+}
+.logo img{
+  max-height: 150px;
+  max-width: 750px;
+  padding-right: 60px;
+  flex: 1;
+  filter: drop-shadow(0 0 3em #646cffaa);
+}
+.transparentBike{
+  height: 200px;
+}
+.rightArr{
+  position: absolute;
+  top:100%;
+  font-size: 50px;
+  right: 30px;
+  transform: translate(0, -50%);
+  z-index: 1;
+  cursor: pointer;
+}
+.leftArr{
+  position: absolute;
+  font-size: 50px;
+  top: 100%;
+  left: 30px;
+  transform: translate(0, -50%);
+  z-index: 1;
+  cursor: pointer;
+
+}
+.leftArr:hover{
+  color: white;
+  
+}
+.rightArr:hover{
+  color: white;
+}
+.testing{
+  background-image: url(/bike1.jpg);
+}
+.bikeHandle{
+  position: absolute;
+  cursor: pointer;
+  top: 30px;
+  right: 450px;
+  font-size: 50px;
+}
+.bikeHandle:hover{
+  color:white;
+}
+#ControlThrottle{
+  display: none;
+  background-color: bisque;
+  font-size: small;
+  width: 200px;
+  position: absolute;
+  top: 20px;
+  left: 46%;
+
+}
+#ControlThrottle.active{
+  display: block;
+}
+.bikeControl{
+  position: absolute;
+  cursor: pointer;
+  top: 90px;
+  right: 430px;
+  font-size: 50px;
+}
+.bikeControl:hover{
+  color: white;
+}
+#ControlMonitor{
+  display: none;
+  width: 250px;
+  height: 150px;
+  font-size: small;
+  position: absolute;
+  top: 20px;
+  right: 150px;
+  background-color: bisque;
+}
+#ControlMonitor.active{
+  display: block;
+
+}
+.bikeBms{
+  position: absolute;
+  cursor: pointer;
+  top: 210px;
+  right: 580px;
+  font-size: 50px;
+}
+.bikeBms:hover{
+  color: white;
+}
+#ControlBms{
+  display: none;
+  width: 150px;
+  height: 180px;
+  font-size: small;
+  position: absolute;
+  top: 20px;
+  left: 200px;
+  background-color: bisque;
+}
+#ControlBms.active{
+  display: block;
+}
+.bikeBattery{
+  position: absolute;
+  cursor: pointer;
+  top: 300px;
+  right: 700px;
+  font-size: 50px;
+}
+.bikeBattery:hover{
+  color:white;
+}
+#ControlBattery{
+  position: absolute;
+  display: none;
+  font-size: small;
+  top: 330px;
+  left: 220px;
+  width: 300px;
+  height: 180px;
+  background-color: bisque;
+}
+#ControlBattery.active{
+  display: block;
+}
+.bikeFrontWheel{
+  position: absolute;
+  cursor: pointer;
+  top: 380px;
+  right: 350px;
+  font-size: 50px;
+}
+.bikeFrontWheel:hover{
+  color:white;
+}
+#ControlFrontWheel{
+  display: none;
+  position: absolute;
+  height: 100px;
+  width: 300px;
+  top: 400px;
+  font-size: small;
+  right: 40%;
+  background-color: bisque;
+}
+#ControlFrontWheel.active{
+  display: block;
+}
+.team{
+  background-color: white;
+  width: 30%;
 }
 
 button {
@@ -42,12 +254,18 @@ button {
   font-size: 1em;
   font-weight: 500;
   font-family: inherit;
-  background-color: #1a1a1a;
+  background-image: linear-gradient(to right, #2BC0E4 0%, #EAECC6  51%, #2BC0E4  100%);
   cursor: pointer;
-  transition: border-color 0.25s;
+  transition: .5s;
+  color: white;
+  text-transform: uppercase;
+  background-size: 200% auto;
 }
 button:hover {
   border-color: #646cff;
+  /* background-color: cyan; */
+  background-position: right center;
+  filter: drop-shadow(10px 10px 15px #646cffaa);
 }
 button:focus,
 button:focus-visible {
@@ -64,5 +282,28 @@ button:focus-visible {
   }
   button {
     background-color: #f9f9f9;
+  }
+}
+@media (max-width:500px){
+  .rightArr{
+    bottom: 100%;
+  }
+  .leftArr{
+    bottom: 100%;
+  }
+  .logo img{
+    max-width: 400px;
+    max-height: 150px;
+  }
+  .bikeHandle{
+    right:110px;
+  }
+  #ControlMonitor{
+    top: none;
+    width: 100%;
+    height: 200px;
+    font-size: small;
+    position: relative;
+    right: 10px;
   }
 }
