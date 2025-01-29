@@ -21,7 +21,7 @@ function App() {
     <div className='container'>
       <Header/>
       <Routes>
-        <Route path='/' element={<Home/>}/>
+        <Route path='/bridgevolt_website' element={<Home/>}/>
         <Route path='/About' element={<About/>}/>
         <Route path='/Donate' element={<Donate/>}/>
         <Route path='/Equity' element={<Equity/>}/>

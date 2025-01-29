@@ -6,7 +6,7 @@ function Header(){
         <header className='header'>
             <h1 className='turret-road-regular'>BridgeVolt Cooperative. E-bikes For All.</h1>
             <div className="logo">
-                <Link to='/'><img src={logo} alt="no image yet" /></Link>
+                <Link to='/bridgevolt_website'><img src={logo} alt="no image yet" /></Link>
             </div>
             <div className='navigation border'>
                 <Link to='/About'>About</Link>
