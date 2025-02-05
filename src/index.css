@@ -113,6 +113,7 @@ h4{
   transform: translate(0, -50%);
   z-index: 1;
   cursor: pointer;
+  color:#2BC0E4
 }
 .leftArr{
   position: absolute;
@@ -122,6 +123,7 @@ h4{
   transform: translate(0, -50%);
   z-index: 1;
   cursor: pointer;
+  color:#2BC0E4
 
 }
 .leftArr:hover{
@@ -141,6 +143,7 @@ h4{
   top: 30px;
   right: 450px;
   font-size: 50px;
+  color:#f506d1;
 }
 .bikeHandle:hover{
   color:white;
@@ -152,7 +155,7 @@ h4{
   width: 200px;
   position: absolute;
   top: 20px;
-  left: 46%;
+  left: 20%;
 
 }
 #ControlThrottle.active{
@@ -164,6 +167,7 @@ h4{
   top: 90px;
   right: 430px;
   font-size: 50px;
+  color:#f506d1;
 }
 .bikeControl:hover{
   color: white;
@@ -171,7 +175,7 @@ h4{
 #ControlMonitor{
   display: none;
   width: 250px;
-  height: 150px;
+  height: 250px;
   font-size: small;
   position: absolute;
   top: 20px;
@@ -188,18 +192,19 @@ h4{
   top: 210px;
   right: 580px;
   font-size: 50px;
+  color:#f506d1;
 }
 .bikeBms:hover{
   color: white;
 }
 #ControlBms{
   display: none;
-  width: 150px;
-  height: 180px;
+  width: 300px;
+  height: 275px;
   font-size: small;
   position: absolute;
   top: 20px;
-  left: 200px;
+  left: 20px;
   background-color: bisque;
 }
 #ControlBms.active{
@@ -211,6 +216,7 @@ h4{
   top: 300px;
   right: 700px;
   font-size: 50px;
+  color:#f506d1;
 }
 .bikeBattery:hover{
   color:white;
@@ -219,10 +225,10 @@ h4{
   position: absolute;
   display: none;
   font-size: small;
-  top: 330px;
-  left: 220px;
-  width: 300px;
-  height: 180px;
+  top: 250px;
+  left: 20px;
+  width: 335px;
+  height: 350px;
   background-color: bisque;
 }
 #ControlBattery.active{
@@ -234,6 +240,7 @@ h4{
   top: 380px;
   right: 350px;
   font-size: 50px;
+  color:#f506d1;
 }
 .bikeFrontWheel:hover{
   color:white;
@@ -241,7 +248,7 @@ h4{
 #ControlFrontWheel{
   display: none;
   position: absolute;
-  height: 100px;
+  height: 200px;
   width: 300px;
   top: 400px;
   font-size: small;
@@ -305,14 +312,57 @@ button:focus-visible {
     max-height: 150px;
   }
   .bikeHandle{
-    right:110px;
+    left:20px;
+  }
+  .bikeControl{
+    left:20px;
+  }
+  .bikeBms{
+    left: 20px;
+  }
+  .bikeBattery{
+    left:20px;
+  }
+  .bikeFrontWheel{
+    left: 20px;
   }
   #ControlMonitor{
-    top: none;
     width: 100%;
-    height: 200px;
-    font-size: small;
-    position: relative;
-    right: 10px;
+    height: 225px;
+    position:relative;
+    left: 5px;
+    margin-bottom: 10px;
+  }
+  #ControlThrottle{
+    left: 5px;
+    width: 100%;
+    height: 225px;
+    position:relative;
+    left: 5px;
+    margin-bottom: 10px;
+  }
+  #ControlBms{
+    width: 100%;
+    height: 225px;
+    position:relative;
+    left: 5px;
+    margin-bottom: 10px;
+    top:5px;
+  }
+  #ControlBattery{
+    width: 100%;
+    height: 250px;
+    position:relative;
+    left: 5px;
+    margin-bottom: 20px;
+    top:5px;
+  }
+  #ControlFrontWheel{
+    width: 100%;
+    height: 225px;
+    position:relative;
+    top:5px;
+    left:5px;
+    margin-bottom: 10px;
   }
 }
