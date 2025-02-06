@@ -1,7 +1,7 @@
 function Footer(){
     return(
         <>
-            <div style={{backgroundColor:'white', borderTop:'1px solid black'}}>
+            <div style={{backgroundColor:'white', borderTop:'1px solid black', padding:'10px'}}>
                 <h1 style={{marginTop:'30px'}}>
                     Want To See More?
                 </h1>
