@@ -18,7 +18,7 @@ function App() {
   return (
   <>
   <Router>
-    <div className='container'>
+    <div>
       <Header/>
       <Routes>
         <Route path='/bridgevolt_website' element={<Home/>}/>
