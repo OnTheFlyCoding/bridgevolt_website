@@ -7,6 +7,7 @@ import Home from './pages/Home';
 import Equity from './pages/Equity';
 import Donate from './pages/Donate';
 import Support from './pages/Support';
+import Error from './pages/Error';
 import {BrowserRouter as Router,
   Routes, Route
 } from 'react-router-dom';
@@ -27,6 +28,7 @@ function App() {
         <Route path='/Equity' element={<Equity/>}/>
         <Route path='/Visit' element={<Visit/>}/>
         <Route path='/Support' element={<Support/>}/>
+        <Route path='*' element={<Error/>}/>
       </Routes> 
       <Footer/>
     </div>
