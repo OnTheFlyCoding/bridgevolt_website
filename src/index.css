@@ -148,6 +148,7 @@ h4{
   top: 20px;
   left: 20%;
 
+
 }
 #ControlThrottle.active{
   display: block;
@@ -291,7 +292,7 @@ button:focus-visible {
     background-color: #f9f9f9;
   }
 }
-@media (max-width:500px){
+@media (max-width:400px){
   .rightArr{
     bottom: 100%;
   }
@@ -304,12 +305,13 @@ button:focus-visible {
   }
   .bikeHandle{
     left:20px;
+    color: black;
   }
   .bikeControl{
     left:20px;
   }
   .bikeBms{
-    left: 20px;
+    left: 0px;
   }
   .bikeBattery{
     left:20px;
@@ -331,6 +333,7 @@ button:focus-visible {
     position:relative;
     left: 5px;
     margin-bottom: 10px;
+    
   }
   #ControlBms{
     width: 100%;

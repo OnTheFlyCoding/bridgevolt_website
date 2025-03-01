@@ -64,7 +64,7 @@ function Home(){
                     <h1 style={{backgroundColor:'white',textAlign:'left', paddingLeft:'10%'}}>About The Amplifier Kit</h1>
                     <section style={{position:'relative', padding:'1rem'}}>
                         <img style={{height:'600px', width:'90%'}} src={transparentBike} alt="" />
-                        <div onClick={toggleHandlebar} className="bikeHandle">X</div>
+                        <div onClick={toggleHandlebar} className="bikeHandle" id='bikeHandle'>X</div>
                         <div onClick={toggleController} className="bikeControl">X</div>
                         <div onClick={toggleBms} className="bikeBms">X</div>
                         <div onClick={toggleBattery} className="bikeBattery">X</div>
