@@ -292,7 +292,7 @@ button:focus-visible {
     background-color: #f9f9f9;
   }
 }
-@media (max-width:400px){
+@media (min-width:500px){
   .rightArr{
     bottom: 100%;
   }
@@ -304,20 +304,17 @@ button:focus-visible {
     max-height: 150px;
   }
   .bikeHandle{
-    left:20px;
-    color: black;
-  }
+    right:90%;
+    }
   .bikeControl{
-    left:20px;
-  }
+    right:90%;  }
   .bikeBms{
-    left: 0px;
-  }
+    right:90%;  }
   .bikeBattery{
-    left:20px;
+    right:90%;
   }
   .bikeFrontWheel{
-    left: 20px;
+    right:90%;
   }
   #ControlMonitor{
     width: 100%;
